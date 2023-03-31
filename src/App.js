@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import './flashcard';
+import Flashcard from './flashcard';
 
 function App() {
   const QUESTIONS = [{front: "question1", back:"answer1"},
@@ -12,7 +14,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
 
-      YOUR CODE WILL GO HERE!
+      <Flashcard></Flashcard>
+
 
 
     </div>

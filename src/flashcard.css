@@ -1,0 +1,23 @@
+.Card {
+    border-radius: 10px;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.CardFront {
+    background-color: rgb(26, 64, 179);    
+}
+.CardBack {
+    background-color: rgb(1, 25, 97);    
+}
+
+
+.Card > span {
+    text-align: center;
+    width: 100%;
+    color: antiquewhite;
+    font-weight: bold;
+}
