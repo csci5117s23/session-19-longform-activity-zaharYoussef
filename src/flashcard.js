@@ -1,7 +1,7 @@
 import { useState } from "react"
 import './flashcard.css';
 
-export default function Flashcard() {
+export default function Flashcard({frontText, backText}) {
     const [front, setFront] = useState(true);//state
 
 
@@ -13,7 +13,7 @@ export default function Flashcard() {
         return (
             <div className="CardFront Card" onClick={toggleVisible}>
                 <span>
-                    front
+                    {frontText}
                 </span>
             </div>
           );
@@ -22,7 +22,7 @@ export default function Flashcard() {
         return (
             <div className="CardBack Card" onClick={toggleVisible}>
                 <span>
-                    back
+                    {backText}
                 </span>
             </div>
           );
